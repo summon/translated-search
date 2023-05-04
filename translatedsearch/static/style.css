@@ -1,0 +1,211 @@
+
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #BDB3D7;
+}
+
+div#column {
+    display:inline-block;
+    min-height:100%;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 90%;
+    background-color: #ffffff;
+}
+
+div#record {
+white-space: pre-wrap;
+}
+
+div#log {
+white-space: pre-wrap;
+}
+
+table.rel {
+    width:100%;
+    border-collapse:collapse;
+}
+
+table.rel td,th {
+    font-size:1em;
+    border:1px solid #8E7EB8;
+    padding:3px 7px 2px 7px;
+}
+
+table.rel th {
+    width: 8%;
+    font-size:1em;
+    text-align:left;
+    padding-top:5px;
+    padding-bottom:4px;
+    background-color:#8E7EB8;
+    color:#ffffff;
+}
+
+table.rel th.relDesc {
+    width: 55%;
+}
+
+table.rel2 {
+    width:60%;
+    border-collapse:collapse;
+}
+
+table.rel2 td,th {
+    font-size:1em;
+    border:1px solid #8E7EB8;
+    padding:3px 7px 2px 7px;
+}
+
+table.rel2 th {
+    width: 12%;
+    font-size:1em;
+    text-align:left;
+    padding-top:5px;
+    padding-bottom:4px;
+    background-color:#8E7EB8;
+    color:#ffffff;
+}
+
+table.rel2 th.relDesc {
+    width: 55%;
+}
+
+input.search {
+    float:left;
+    font-size:12px;
+    padding:4px 2px;
+    border:solid 1px #BDB3D7;
+    width:400px;
+    margin:2px 0 20px 10px;
+}
+
+div#stylized {
+    clear:all;
+}
+
+.myform {
+    margin-left: 0px;;
+    width:700px;
+    padding:14px;
+}
+
+#stylized h1 {
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+#stylized p {
+    font-size:11px;
+    color:#666666;
+    margin-bottom:20px;
+    border-bottom:solid 1px #BDB3D7;
+    padding-bottom:10px;
+}
+
+#stylized label {
+    display:block;
+    font-weight:bold;
+    text-align:right;
+    width:240px;
+    float:left;
+}
+
+#stylized .small {
+    color:#666666;
+    display:block;
+    font-size:11px;
+    font-weight:normal;
+    text-align:right;
+    width:240px;
+}
+
+#stylized input {
+    float:left;
+    font-size:12px;
+    padding:4px 2px;
+    border:solid 1px #BDB3D7;
+    width:400px;
+    margin:2px 0 20px 10px;
+}
+
+input.largerCheckbox {
+            float:left;
+            font-size:12px;
+            padding:4px 2px;
+            border:solid 1px #BDB3D7;
+            width: 40px;
+            height: 40px;
+            margin:2px 0 20px 10px;
+        }
+
+#stylized button {
+    clear:both;
+    margin-left:150px;
+    width:125px;
+    height:31px;
+    background:#BDB3D7;
+    text-align:center;
+    line-height:31px;
+    color:#FFFFFF;
+    font-size:12px;
+    font-weight:bold;
+}
+
+#stylized2 h1 {
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+#stylized2 p {
+    font-size:11px;
+    color:#666666;
+    margin-bottom:20px;
+    border-bottom:solid 1px #BDB3D7;
+    padding-bottom:10px;
+}
+
+#stylized2 label {
+    display:block;
+    font-weight:bold;
+    text-align:right;
+    width:240px;
+    float:left;
+}
+
+#stylized2 .small {
+    color:#666666;
+    display:block;
+    font-size:11px;
+    font-weight:normal;
+    text-align:right;
+    width:240px;
+}
+
+#stylized2 input {
+    float:left;
+    font-size:12px;
+    padding:4px 2px;
+    border:solid 1px #BDB3D7;
+    width:400px;
+    margin:2px 0 20px 10px;
+}
+
+#stylized2 button {
+    clear:both;
+    margin-left:150px;
+    width:125px;
+    height:31px;
+    background:#BDB3D7;
+    text-align:center;
+    line-height:31px;
+    color:#FFFFFF;
+    font-size:12px;
+    font-weight:bold;
+}

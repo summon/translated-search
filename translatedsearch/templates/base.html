@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        {% block javascript %}{% endblock %}
+    </head>
+
+    <body>
+        <title>CDI 2023 Hackathon - Translated Search</title>
+        <div id="column">
+            <h3>CDI 2023 Hackathon - Translated Search</h3>
+            <hr/>
+            {% block columnbody %}{% endblock %}
+            <hr/>
+            <p>Powered by <img src="http://assets.summon.serialssolutions.com/53c473f8a61f866b8900252d" alt="ProQuest" height="30" style="vertical-align:middle;">.  Copyright 2023 ProQuest. All rights reserved. <a href="https://about.proquest.com/about/privacy-statement.html">Online Policies</a></p>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block columnbody %}
+
+<h3>CDI Translated Search</h3>
+<hr/>
+
+<div id="stylized" class="myform">
+
+  <form id="form" name="form" method="post">
+
+    <label>Search <span class="small">Search string using search system syntax</span></label>
+    <input type="text" name="search" id="search" value="{{search}}"/>
+
+    <label>Target Language <span class="small">Select supported language from dropdown</span></label>
+    <input type="text" list="target_languages" name="target_language" id="target_language" value="{{language}}"/>
+    <datalist id="target_languages">
+      {% for l in languages %}
+          <option value="{{ l }}">
+      {% endfor %}
+    </datalist>
+
+    <button type="submit" name="action" value="update">Submit</button>
+
+      {% if data %}
+      <button type="download" name="action" value="download">Download</button>
+      {% endif %}
+
+    <br/>
+
+  </form>
+</div>
+
+<div>
+  {% if data %}
+  <br/>
+  <hr/>
+  <p> The system found {{ data['record_count'] }} records when searching for {{ data['translated_query'] }} in {{ language }} journal articles</p>
+  <br/>
+
+  <table class="rel" border="1">
+    <thead>
+        <tr>
+          {% for h in data['lines'][0][0:-4] %}
+            <th>{{ h }}</th>
+          {% endfor %}
+        </tr>
+        {% for row in data['lines'][1:] %}
+        <tr>
+            <td><a href="{{row[-1]}}" target="_blank">{{row[0]}}</a></td>
+          {% for i in row[1:-4] %}
+          <td>{{ i }}</td>
+          {% endfor %}
+        </tr>
+    {% endfor %}
+    </thead>
+  </table>
+
+  {% endif %}
+
+  <br/>
+ </div>
+
+{% endblock %}
