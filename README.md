@@ -9,7 +9,7 @@ This assumes you are using system python 3 to seed a virtual environment.  Adjus
 * python3 -m venv venv 
 * source venv/bin/activate
 * python3 -m pip install -r requirements.txt
-* edit settings.py and set proper values for:
+* edit translatedsearch/settings.py and set proper values for:
   * SUMMON_ACCESS_ID
   * SUMMON_API_KEY
   * GOOGLE_CRED_JSON_FILE
