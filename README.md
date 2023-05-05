@@ -2,7 +2,7 @@
 This is the 2023 CDI Hackathon Project combining the Summon API with Google Translate.  It is open sourced to provide an API Integration example.
 
 ## Installation
-This assumes you are using system python 3 to see a virtual environment.  Adjust accordingly for different scenarios.
+This assumes you are using system python 3 to seed a virtual environment.  Adjust accordingly for different scenarios.
 * cd into your desired install location
 * git clone https://github.com/summon/translated-search.git
 * cd translated-search
